@@ -1,0 +1,92 @@
+.main-card {
+	max-width: 244px;
+	@include media-breakpoint-down(sm) {
+		max-width: 200px;
+	}
+	@include media-breakpoint-down(xs) {
+		max-width: initial;
+		&-title {
+			font-size: 14px;
+		}
+	}
+	&-dot {
+		width: 14px;
+		height: 14px;
+		background-color: $primary;
+		border-radius: 100%;
+		margin-bottom: 14px;
+		margin-top: 5px;
+	}
+	&-container {
+		border-right: 1px solid #E0E0E0;
+		padding-top: 50px;
+		&-last {
+			@include media-breakpoint-down(xs) {
+				padding-bottom: 0 !important;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			padding-top: 20px;
+			border-bottom: 1px solid #E0E0E0;
+			display: flex;
+			justify-content: center;
+		}
+		@include media-breakpoint-down(xs) {
+			border: none !important;
+			display: block !important;
+			padding-top: 0;
+			padding-bottom: 1.5rem;
+		}
+		&-center {
+			display: flex;
+			justify-content: center;
+		}
+		&-right {
+			display: flex;
+			justify-content: flex-end;
+			@include media-breakpoint-down(md) {
+				justify-content: center;
+			}
+		}
+		&-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&-top {
+			border-bottom: 1px solid #E0E0E0;
+			padding-top: 0;
+			padding-bottom: 8px;
+			@include media-breakpoint-down(md) {
+				padding-top: 20px;
+			}
+			@include media-breakpoint-down(xs) {
+				padding-top: 0;
+				padding-bottom: 1.5rem;
+			}
+		}
+		&:nth-child(3n) {
+			border-right: none;
+			@include media-breakpoint-down(md) {
+				border-right: 1px solid #E0E0E0;
+			}
+		}
+		&:nth-child(2n) {
+			@include media-breakpoint-down(md) {
+				border-right: none;
+			}
+		}
+		&:nth-child(5),
+		&:nth-child(6) {
+			@include media-breakpoint-down(md) {
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.btn-full-width-sm {
+	@include media-breakpoint-down(xs) {
+		width: 100%;
+	}
+}

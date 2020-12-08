@@ -1,0 +1,66 @@
+mixin main-carousel-item
+	img(src="picture/upload/crew.jpg", alt="")
+mixin secondary-carousel-item
+	.crew-slider-secondary-item
+		img(src="picture/upload/face.jpg", alt="").crew-slider-secondary-item-img
+mixin text-carousel-item
+	.crew-slider-text-item
+		.h4.mb-3.pb-1 Анастасия Пугачевич
+		p.mb-3.pb-1
+			span.font-weight-bold Образование: 
+			span МАРХИ
+		p.mb-3.pb-1
+			span.font-weight-bold Стаж работы: 
+			span 10 лет
+		p.mb-3.pb-1
+			span.font-weight-bold Должность: 
+			span архитектор
+		p.mb-3.pb-1 Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.
+.padding-section-bottom
+	.container
+		.row
+			.col-md-12.d-block.d-sm-none
+				h2.h4.mb-3 Команда
+				p.mb-3 У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.
+			.col-lg-4.col-sm-5
+				.crew-slider-main
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+					+main-carousel-item
+				.d-none.d-sm-block
+					.crew-slider-secondary.mt-1
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+						+secondary-carousel-item
+			.col-lg-6.col-sm-7
+				.pl-xl-4.ml-xl-3
+					h2.h4.mb-3.d-none.d-sm-block Команда
+					p.mb-5.d-none.d-sm-block У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.
+					.crew-slider-text.mt-3.mt-sm-0
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+						+text-carousel-item
+					.d-none.d-sm-flex.align-items-center
+						.crew-slider-arrow-left.mr-4
+						.crew-slider-arrow-right.ml-3

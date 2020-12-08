@@ -1,0 +1,34 @@
+mixin carousel-item
+	.main__card
+		.main__card-hide
+			.main__card-hide-block
+				.text-white.h4.mb-4 Два лица одного дома 
+				.text-white.h5.font-weight-normal.mb-4.pb-3 Площадь 
+					span.font-weight-bold 278 м2
+				a(href="#").btn.btn-outline-secondary Посмотреть проект
+
+.main.overflow-hidden
+	.d-none.d-sm-block
+		.main-slider
+			+carousel-item
+			+carousel-item
+			+carousel-item
+			+carousel-item
+			+carousel-item
+			+carousel-item
+			+carousel-item
+	.d-block.d-sm-none#headingCollapseImages
+		img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+		img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
+		img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+		#collapseImages.collapse(aria-labelledby="headingCollapseImages")
+			img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+			img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
+			img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+
+		.container
+			.row
+				.col-md-12.mt-3
+					button.collapsed-btn.btn.btn-outline-primary.w-100(data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages")
+						span.collapsed-btn-false Смотреть еще
+						span.collapsed-btn-true Скрыть

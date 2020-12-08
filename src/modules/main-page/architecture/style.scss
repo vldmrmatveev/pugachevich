@@ -1,0 +1,103 @@
+.video {
+	&-block {
+		position: relative;
+		&:before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,0.7);
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			transition: 0.2s ease all;
+		}
+		&-btn {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			z-index: 2;
+			transition: 0.2s ease all;
+			width: 36px;
+			height: 36px;
+			background-image: url('../picture/upload/play.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			opacity: 0.7;
+		}
+		&:hover {
+			&:before {
+				opacity: 0.7;
+			}
+			.video-block-btn {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.object-fit {
+	&-cover {
+		object-fit: cover;
+	}
+	&-contain {
+		object-fit: contain;
+	}
+}
+
+.padding-section {
+	padding-top: 212px;
+	padding-bottom: 212px;
+	@include media-breakpoint-down(md) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+	@include media-breakpoint-down(xs) {
+		padding-top: 64px;
+		padding-bottom: 64px;
+	}
+	&-top {
+		padding-top: 212px;
+		@include media-breakpoint-down(md) {
+			padding-top: 120px;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-top: 90px;
+		}
+		@include media-breakpoint-down(xs) {
+			padding-top: 64px;
+		}
+		&-min {
+			padding-top: 100px;
+			@include media-breakpoint-down(xs) {
+				padding-top: 64px;
+			}
+		}
+	}
+	&-bottom {
+		padding-bottom: 212px;
+		@include media-breakpoint-down(md) {
+			padding-bottom: 120px;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-bottom: 90px;
+		}
+		@include media-breakpoint-down(xs) {
+			padding-bottom: 64px;
+		}
+		&-min {
+			padding-bottom: 100px;
+			@include media-breakpoint-down(xs) {
+				padding-bottom: 64px;
+			}
+		}
+	}
+}

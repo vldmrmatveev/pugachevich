@@ -1,0 +1,24 @@
+.footer__container {
+	padding: 30px 60px;
+	@include media-breakpoint-down(xs) {
+		font-size: 11px;
+	}
+	&-block {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		@include media-breakpoint-down(sm) {
+			justify-content: space-between;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+a.text-dark {
+	&:hover {
+		color: $primary !important;
+	}
+}

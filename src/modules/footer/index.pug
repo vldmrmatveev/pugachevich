@@ -1,0 +1,23 @@
+- var email = "info@pugachevich.studio";
+- var phone = "+7 925 944 80 08";
+- var phonelink = "79259448008";
+footer
+	.container-fluid.footer__container
+		.row.justify-content-between
+			.col-md-12.d-block.d-md-none.mb-4.text-center
+				a(href="mailto:" + email).font-weight-bold.text-dark #{email}
+			.col-md-2.d-flex.justify-content-center.d-md-block
+				.d-flex.align-items-center.mb-4.mb-md-0
+					.mr-3
+						a(href="#").d-flex
+							i.icon.icon-instagram.navbar__icon
+					.mr-3
+						a(href="#").d-flex
+							i.icon.icon-facebook.navbar__icon
+			.col-md-10.footer__container-block
+				.mr-5.d-none.d-md-block
+					a(href="mailto:" + email).font-weight-bold.text-dark #{email}
+				.mr-5
+					a(href="tel:" + phonelink).font-weight-bold.text-dark #{phone}
+				.d-block
+					a(href="#header").text-dark.font-weight-bold.link-scroll-up В начало

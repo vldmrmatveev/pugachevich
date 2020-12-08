@@ -1,0 +1,26 @@
+.form {
+	&__container {
+		padding: 157px 0;
+		background-image: url('../picture/backgrounds/form.jpg');
+		background-size: cover;
+		background-position: center;
+		&-block {
+			background-color: rgba(255,255,255,0.97);
+			padding: 120px 91px;
+			@include media-breakpoint-down(sm) {
+				padding: 50px 30px;
+			}
+			@include media-breakpoint-down(xs) {
+				padding: 32px 20px;
+				margin: 0 15px;
+				width: calc(100% - 30px);
+			}
+		}
+		@include media-breakpoint-down(md) {
+			padding: 80px 0;
+		}
+		@include media-breakpoint-down(xs) {
+			padding: 46px 0 49px;
+		}
+	}
+}

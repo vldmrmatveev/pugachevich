@@ -1,0 +1,42 @@
+.main {
+	&__card {
+		background-image: url('../picture/backgrounds/main.jpg');
+		background-size: cover;
+		background-position: center;
+		height: 602px;
+		&-hide {
+			opacity: 0;
+			transition: 0.2s ease all;
+			background-color: rgba(0,0,0,0.7);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			width: 100%;
+		}
+		&:hover {
+			.main__card-hide {
+				opacity: 1;
+			}	
+		}
+	}
+}
+
+.collapsed-btn {
+	&[aria-expanded="false"] {
+		.collapsed-btn-false {
+			display: inline-block;
+		}
+		.collapsed-btn-true {
+			display: none;
+		}
+	}
+	&[aria-expanded="true"] {
+		.collapsed-btn-true {
+			display: inline-block;
+		}
+		.collapsed-btn-false {
+			display: none;
+		}
+	}
+}

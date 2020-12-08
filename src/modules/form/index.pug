@@ -1,0 +1,72 @@
+.form__container
+	.form__container-block.container
+		.row.justify-content-between
+			.col-lg-4
+				.h4.mb-4 Начнем проект?
+				.d-none.d-md-block
+					ul.pl-3.ml-1
+						li.mb-3.pb-1 отправьте заявку
+						li.mb-3.pb-1 наши специалисты сделают  предварительный расчет
+						li.mb-3.pb-1 получите расчет по электронной почте
+			.col-lg-8.col-xl-7
+				form.form
+					.row
+						.col-xl-4.col-lg-6.mb-3
+							.form-group
+								input.form-control#nameInputForm(type="text" name="name" required)
+								label(for="nameInputForm").form-control-required-label Имя
+						.col-xl-4.col-lg-6.mb-3
+							.form-group
+								input.form-control.phone#phoneInputForm(type="text" name="PHONE" data-rule-phone="true" required)
+								label(for="phoneInputForm").form-control-required-label Телефон
+						.col-xl-4.col-lg-6.mb-3.d-none.d-md-block
+							.form-group
+								input.form-control#emailInputForm(type="email" name="email" required)
+								label(for="emailInputForm").form-control-required-label Email
+						.col-xl-4.col-lg-6.mb-3.d-none.d-md-block
+							.form-group
+								input.form-control(type="text" name="square" placeholder="Площадь")
+						.col-xl-4.col-lg-6.mb-3.d-none.d-md-block
+							.form-group
+								select.select-full-width
+									option(value="" disabled selected).select-full-width-star Тип объекта
+									option(value="1") Объект №1
+									option(value="2") Объект №2
+									option(value="3") Объект №3
+						.col-xl-4.col-lg-6.mb-3.d-none.d-md-block
+							.form-group
+								select.select-full-width(required)
+									option(value="" disabled selected).select-full-width-star Вид работ
+									option(value="2 work") Вид работ №1
+									option(value="3 work") Вид работ №2
+									option(value="4 work") Вид работ №3
+						.col-xl-12.mb-4
+							.form-group
+								input.form-control(type="text" name="textContent" placeholder="Добавить комментарий")
+					.row
+						.col-md-6.mb-3
+							.checkbox__block
+								input#checkbox2(type="checkbox" name="agree" required checked).checkbox__origin
+								label(for="checkbox2").true-checkbox.d-flex.align-items-start
+									span.checkbox.mr-2
+									span.checkbox__text Я&nbsp;соглашаюсь на&nbsp;сбор и&nbsp;обработку персональных данных
+						.col-md-6.mb-0.mb-md-3.d-flex.justify-content-end
+							button.btn.btn-outline-primary.form__submit(type="submit") Отправить заявку
+					.modal.fade(tabindex='-1' role='dialog' aria-hidden='true' data-form-modal="success")
+						.modal-dialog.modal-dialog-centered(role='document')
+							.modal-content
+								.modal-header
+									button.close(type='button' data-dismiss='modal' aria-label='Close')
+										small
+											i.icon.icon-close
+								.modal-body.text-center
+									h4.h4.mb-5 Данные успешно отправлены
+					.modal.fade(tabindex='-1' role='dialog' aria-hidden='true' data-form-modal="error")
+						.modal-dialog.modal-dialog-centered(role='document')
+							.modal-content
+								.modal-header
+									button.close(type='button' data-dismiss='modal' aria-label='Close')
+										small
+											i.icon.icon-close
+								.modal-body.text-center
+									h4.h4.mb-5 Что-то пошло не так, попробуйте перезагрузить страницу

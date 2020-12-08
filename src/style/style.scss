@@ -1,0 +1,12 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+
+@import "../modules/form/style";
+@import "../modules/footer/style";
+
+@import "../modules/main-page/main/style";
+@import "../modules/main-page/architecture/style";
+@import "../modules/main-page/cards/style";
+@import "../modules/main-page/crew/style";

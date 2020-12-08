@@ -1,0 +1,20 @@
+mixin main-card(title, text)
+	.main-card
+		.main-card-dot
+		p.h5.mb-4.mb-sm-3.main-card-title!= title
+		p.mb-4.d-none.d-sm-block= text
+.padding-section-bottom
+	.container.px-sm-0
+		.row.no-gutters
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-left.main-card-container-top
+				+main-card('Неформальное <br> отношение', 'Проекты архитектурного бюро граничат с искусством, а заказчики становятся обладателями авторской архитектуры и интерьеров, созданных исключительно для них. ')
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-center.main-card-container-top
+				+main-card('Индивидуальность', 'Каждый новый проект — это новая персональная история. Мы проживаем внутри и интегрируем в пространство личные, семейные и рабочие сценарии клиентов.')
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-center.main-card-container-top
+				+main-card('Комфорт в работе <br> и гарантии', 'Мы воплощаем проекты от архитектурной концепции до интерьера. Несём ответственность за каждое решение, избавляем клиентов от любых негативных факторов, технических и организационных вопросов')
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-left
+				+main-card('Неординарность', 'Мы не избегаем сложных решений, если считаем их лучшими. Сегодня этот опыт позволяет нам реализовывать частные, коммерческие и общественные проекты любого масштаба.')
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-center.main-card-container-last
+				+main-card('Эмпатия', 'Клиент — главный источник вдохновения в реализации пространства. Со многими заказчиками наше архитектурное бюро в Москве сохраняет доверительные, дружеские отношения.')
+			.col-lg-4.col-sm-6.main-card-container.main-card-container-btn
+				button.btn.btn-full-width-sm.btn-outline-primary(data-toggle="modal" data-target="#formModal") Начать мой проект

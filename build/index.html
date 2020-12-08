@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Pugachevich Studio | Main Page</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="picture/upload/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="navbar-fixed-container" id="header"></div>
+    <nav class="navbar navbar-fixed navbar-expand-lg navbar-light bg-white"><a class="navbar-brand" href="/"><img src="picture/upload/logo.svg" alt=""></a>
+      <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon-custom"></span><span class="navbar-toggler-icon-custom"></span><span class="navbar-toggler-icon-custom"></span><span class="navbar-toggler-icon-custom"></span></button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto my-4 my-lg-0">
+          <li class="nav-item nav-item-drop mb-2 mb-lg-0"><a class="nav-link" href="#">О студии</a></li>
+          <li class="nav-item nav-item-drop mb-2 mb-lg-0"><a class="nav-link" href="#">Услуги</a></li>
+          <li class="nav-item nav-item-drop mb-2 mb-lg-0"><a class="nav-link" href="#">Портфолио</a></li>
+          <li class="nav-item nav-item-drop mb-2 mb-lg-0"><a class="nav-link" href="#">Блог</a></li>
+          <li class="nav-item nav-item-drop"><a class="nav-link" href="#">Контакты</a></li>
+        </ul>
+        <div class="d-flex d-lg-none align-items-center mb-3">
+          <div class="mr-3"><a class="d-flex" href="#"><i class="icon icon-instagram navbar__icon"></i></a></div>
+          <div class="mr-3"><a class="d-flex" href="#"><i class="icon icon-facebook navbar__icon"></i></a></div>
+        </div>
+      </div>
+      <div class="d-none d-lg-flex align-items-center">
+        <div class="mr-3"><a class="d-flex" href="#"><i class="icon icon-instagram navbar__icon"></i></a></div>
+        <div class="mr-3 pr-xl-3"><a class="d-flex" href="#"><i class="icon icon-facebook navbar__icon"></i></a></div>
+        <button class="btn btn-outline-primary navbar__btn" data-toggle="modal" data-target="#formModal">Начать мой проект</button>
+      </div>
+    </nav>
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></button>
+          </div>
+          <div class="modal-body px-xl-5">
+            <div class="container px-xl-4">
+              <div class="row justify-content-between">
+                <div class="col-lg-4">
+                  <div class="h4 mb-4">Начнем проект?</div>
+                  <div class="d-none d-md-block">
+                    <ul class="pl-3 ml-1">
+                      <li class="mb-3 pb-1">отправьте заявку</li>
+                      <li class="mb-3 pb-1">наши специалисты сделают  предварительный расчет</li>
+                      <li class="mb-3 pb-1">получите расчет по электронной почте</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-xl-7">
+                  <form class="form">
+                    <div class="row">
+                      <div class="col-xl-4 col-lg-6 mb-3">
+                        <div class="form-group">
+                          <input class="form-control" id="nameInput" type="text" name="name" required>
+                          <label class="form-control-required-label" for="nameInput">Имя</label>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6 mb-3">
+                        <div class="form-group">
+                          <input class="form-control phone" id="phoneInput" type="text" name="PHONE" data-rule-phone="true" required>
+                          <label class="form-control-required-label" for="phoneInput">Телефон</label>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                        <div class="form-group">
+                          <input class="form-control" id="emailInput" type="email" name="email" required>
+                          <label class="form-control-required-label" for="emailInput">Email</label>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                        <div class="form-group">
+                          <input class="form-control" type="text" name="square" placeholder="Площадь">
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                        <div class="form-group">
+                          <select class="select-full-width">
+                            <option class="select-full-width-star" value="" disabled selected>Тип объекта</option>
+                            <option value="1">Объект №1</option>
+                            <option value="2">Объект №2</option>
+                            <option value="3">Объект №3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                        <div class="form-group">
+                          <select class="select-full-width" required>
+                            <option class="select-full-width-star" value="" disabled selected>Вид работ</option>
+                            <option value="2 work">Вид работ №1</option>
+                            <option value="3 work">Вид работ №2</option>
+                            <option value="4 work">Вид работ №3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xl-12 mb-4">
+                        <div class="form-group">
+                          <input class="form-control" type="text" name="textContent" placeholder="Добавить комментарий">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="checkbox__block">
+                          <input class="checkbox__origin" id="checkbox1" type="checkbox" name="agree" required checked>
+                          <label class="true-checkbox d-flex align-items-start" for="checkbox1"><span class="checkbox mr-2"></span><span class="checkbox__text">Я&nbsp;соглашаюсь на&nbsp;сбор и&nbsp;обработку персональных данных</span></label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3 d-flex justify-content-end">
+                        <button class="btn btn-outline-primary form__submit" type="submit">Отправить заявку</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-form-modal="success">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></button>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="h5 mb-4">Спасибо!</h4>
+            <p class="mb-5">Ваша заявка принята, в самое ближайшее время мы отправим предварительный расчет на вашу почту</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-form-modal="error">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><i class="icon icon-close"></i></button>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="h5 mb-4">Ошибка</h4>
+            <p class="mb-5">Что-то пошло не так, попробуйте перезагрузить страницу</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main overflow-hidden">
+      <div class="d-none d-sm-block">
+        <div class="main-slider">
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+              <div class="main__card">
+                <div class="main__card-hide">
+                  <div class="main__card-hide-block">
+                    <div class="text-white h4 mb-4">Два лица одного дома </div>
+                    <div class="text-white h5 font-weight-normal mb-4 pb-3">Площадь <span class="font-weight-bold">278 м2</span></div><a class="btn btn-outline-secondary" href="#">Посмотреть проект</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="d-block d-sm-none" id="headingCollapseImages"><img class="w-100 mb-2" src="picture/upload/main-mob-1.jpg" alt=""><img class="w-100 mb-2" src="picture/upload/main-mob-2.jpg" alt=""><img class="w-100 mb-2" src="picture/upload/main-mob-3.jpg" alt="">
+        <div class="collapse" id="collapseImages" aria-labelledby="headingCollapseImages"><img class="w-100 mb-2" src="picture/upload/main-mob-1.jpg" alt=""><img class="w-100 mb-2" src="picture/upload/main-mob-2.jpg" alt=""><img class="w-100 mb-2" src="picture/upload/main-mob-3.jpg" alt=""></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mt-3">
+              <button class="collapsed-btn btn btn-outline-primary w-100" data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages"><span class="collapsed-btn-false">Смотреть еще</span><span class="collapsed-btn-true">Скрыть</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-section padding-section-top-min">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10">
+            <div class="row">
+              <div class="col-12 d-block d-md-none">
+                <h2 class="h4 mb-3">Архитектура - образ жизни</h2>
+              </div>
+              <div class="col-md-6 mb-3 mb-md-0"><a class="video-block d-block h-100" href="https://youtu.be/c3YU8j8jp9s" data-fancybox><img class="h-100 w-100 object-fit-cover" src="picture/backgrounds/main.jpg" alt=""><span class="video-block-btn"></span></a></div>
+              <div class="col-md-6">
+                <div class="pl-xl-5">
+                  <h1 class="h4 mb-3 d-none d-md-block">Архитектура - образ жизни</h1>
+                  <p class="mb-3">Нас отличает профессиональный архитектурный подход к&nbsp;реализации проектов. Мы&nbsp;умеем грамотно интегрировать материалы в&nbsp;среду, знаем всё о&nbsp;конструктиве зданий и&nbsp;об&nbsp;устройстве инженерных систем, избавляем клиентов от&nbsp;дорогостоящих технических просчетов. </p>
+                  <p class="mb-0 mb-md-3">Сочетая архитектуру и&nbsp;дизайн, мы&nbsp;создаем уникальные и&nbsp;функциональные пространства, которые наполняем характерами&nbsp;их владельцев.</p>
+                  <p class="mb-3 d-none d-md-block">Клиенты студии&nbsp;&mdash; люди со&nbsp;вкусом и&nbsp;любовью к&nbsp;жизни. Наших заказчиков объединяет кругозор, качественное образование и&nbsp;уважение к&nbsp;профессионализму. Они предпочитают доверять процесс реализации проекта одному архитектурному бюро, получая завершенный в&nbsp;срок проект, бюджет которого не&nbsp;вырастает в&nbsp;процессе работы.</p>
+                  <p class="mb-3 d-none d-md-block">Для абсолютного большинства наших клиентов важна способность архитектора быть с&nbsp;ними на&nbsp;одной волне и&nbsp;понимать с&nbsp;полуслова.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-section-bottom">
+      <div class="container px-sm-0">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-left main-card-container-top">
+                <div class="main-card">
+                  <div class="main-card-dot"></div>
+                  <p class="h5 mb-4 mb-sm-3 main-card-title">Неформальное <br> отношение</p>
+                  <p class="mb-4 d-none d-sm-block">Проекты архитектурного бюро граничат с искусством, а заказчики становятся обладателями авторской архитектуры и интерьеров, созданных исключительно для них. </p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-center main-card-container-top">
+                <div class="main-card">
+                  <div class="main-card-dot"></div>
+                  <p class="h5 mb-4 mb-sm-3 main-card-title">Индивидуальность</p>
+                  <p class="mb-4 d-none d-sm-block">Каждый новый проект — это новая персональная история. Мы проживаем внутри и интегрируем в пространство личные, семейные и рабочие сценарии клиентов.</p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-center main-card-container-top">
+                <div class="main-card">
+                  <div class="main-card-dot"></div>
+                  <p class="h5 mb-4 mb-sm-3 main-card-title">Комфорт в работе <br> и гарантии</p>
+                  <p class="mb-4 d-none d-sm-block">Мы воплощаем проекты от архитектурной концепции до интерьера. Несём ответственность за каждое решение, избавляем клиентов от любых негативных факторов, технических и организационных вопросов</p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-left">
+                <div class="main-card">
+                  <div class="main-card-dot"></div>
+                  <p class="h5 mb-4 mb-sm-3 main-card-title">Неординарность</p>
+                  <p class="mb-4 d-none d-sm-block">Мы не избегаем сложных решений, если считаем их лучшими. Сегодня этот опыт позволяет нам реализовывать частные, коммерческие и общественные проекты любого масштаба.</p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-center main-card-container-last">
+                <div class="main-card">
+                  <div class="main-card-dot"></div>
+                  <p class="h5 mb-4 mb-sm-3 main-card-title">Эмпатия</p>
+                  <p class="mb-4 d-none d-sm-block">Клиент — главный источник вдохновения в реализации пространства. Со многими заказчиками наше архитектурное бюро в Москве сохраняет доверительные, дружеские отношения.</p>
+                </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 main-card-container main-card-container-btn">
+            <button class="btn btn-full-width-sm btn-outline-primary" data-toggle="modal" data-target="#formModal">Начать мой проект</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="padding-section-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-block d-sm-none">
+            <h2 class="h4 mb-3">Команда</h2>
+            <p class="mb-3">У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.</p>
+          </div>
+          <div class="col-lg-4 col-sm-5">
+            <div class="crew-slider-main"><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt=""><img src="picture/upload/crew.jpg" alt="">
+            </div>
+            <div class="d-none d-sm-block">
+              <div class="crew-slider-secondary mt-1">
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+                    <div class="crew-slider-secondary-item"><img class="crew-slider-secondary-item-img" src="picture/upload/face.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-7">
+            <div class="pl-xl-4 ml-xl-3">
+              <h2 class="h4 mb-3 d-none d-sm-block">Команда</h2>
+              <p class="mb-5 d-none d-sm-block">У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.</p>
+              <div class="crew-slider-text mt-3 mt-sm-0">
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+                    <div class="crew-slider-text-item">
+                      <div class="h4 mb-3 pb-1">Анастасия Пугачевич</div>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Образование: </span><span>МАРХИ</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Стаж работы: </span><span>10 лет</span></p>
+                      <p class="mb-3 pb-1"><span class="font-weight-bold">Должность: </span><span>архитектор</span></p>
+                      <p class="mb-3 pb-1">Со мной — лучшие люди в профессии. Увлеченные, умные, неравнодушные.</p>
+                    </div>
+              </div>
+              <div class="d-none d-sm-flex align-items-center">
+                <div class="crew-slider-arrow-left mr-4"></div>
+                <div class="crew-slider-arrow-right ml-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__container">
+      <div class="form__container-block container">
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="h4 mb-4">Начнем проект?</div>
+            <div class="d-none d-md-block">
+              <ul class="pl-3 ml-1">
+                <li class="mb-3 pb-1">отправьте заявку</li>
+                <li class="mb-3 pb-1">наши специалисты сделают  предварительный расчет</li>
+                <li class="mb-3 pb-1">получите расчет по электронной почте</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-8 col-xl-7">
+            <form class="form">
+              <div class="row">
+                <div class="col-xl-4 col-lg-6 mb-3">
+                  <div class="form-group">
+                    <input class="form-control" id="nameInputForm" type="text" name="name" required>
+                    <label class="form-control-required-label" for="nameInputForm">Имя</label>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 mb-3">
+                  <div class="form-group">
+                    <input class="form-control phone" id="phoneInputForm" type="text" name="PHONE" data-rule-phone="true" required>
+                    <label class="form-control-required-label" for="phoneInputForm">Телефон</label>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                  <div class="form-group">
+                    <input class="form-control" id="emailInputForm" type="email" name="email" required>
+                    <label class="form-control-required-label" for="emailInputForm">Email</label>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="square" placeholder="Площадь">
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                  <div class="form-group">
+                    <select class="select-full-width">
+                      <option class="select-full-width-star" value="" disabled selected>Тип объекта</option>
+                      <option value="1">Объект №1</option>
+                      <option value="2">Объект №2</option>
+                      <option value="3">Объект №3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 mb-3 d-none d-md-block">
+                  <div class="form-group">
+                    <select class="select-full-width" required>
+                      <option class="select-full-width-star" value="" disabled selected>Вид работ</option>
+                      <option value="2 work">Вид работ №1</option>
+                      <option value="3 work">Вид работ №2</option>
+                      <option value="4 work">Вид работ №3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xl-12 mb-4">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="textContent" placeholder="Добавить комментарий">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="checkbox__block">
+                    <input class="checkbox__origin" id="checkbox2" type="checkbox" name="agree" required checked>
+                    <label class="true-checkbox d-flex align-items-start" for="checkbox2"><span class="checkbox mr-2"></span><span class="checkbox__text">Я&nbsp;соглашаюсь на&nbsp;сбор и&nbsp;обработку персональных данных</span></label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-0 mb-md-3 d-flex justify-content-end">
+                  <button class="btn btn-outline-primary form__submit" type="submit">Отправить заявку</button>
+                </div>
+              </div>
+              <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-form-modal="success">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><small><i class="icon icon-close"></i></small></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <h4 class="h4 mb-5">Данные успешно отправлены</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-form-modal="error">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close"><small><i class="icon icon-close"></i></small></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <h4 class="h4 mb-5">Что-то пошло не так, попробуйте перезагрузить страницу</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid footer__container">
+        <div class="row justify-content-between">
+          <div class="col-md-12 d-block d-md-none mb-4 text-center"><a class="font-weight-bold text-dark" href="mailto:info@pugachevich.studio">info@pugachevich.studio</a></div>
+          <div class="col-md-2 d-flex justify-content-center d-md-block">
+            <div class="d-flex align-items-center mb-4 mb-md-0">
+              <div class="mr-3"><a class="d-flex" href="#"><i class="icon icon-instagram navbar__icon"></i></a></div>
+              <div class="mr-3"><a class="d-flex" href="#"><i class="icon icon-facebook navbar__icon"></i></a></div>
+            </div>
+          </div>
+          <div class="col-md-10 footer__container-block">
+            <div class="mr-5 d-none d-md-block"><a class="font-weight-bold text-dark" href="mailto:info@pugachevich.studio">info@pugachevich.studio</a></div>
+            <div class="mr-5"><a class="font-weight-bold text-dark" href="tel:79259448008">+7 925 944 80 08</a></div>
+            <div class="d-block"><a class="text-dark font-weight-bold link-scroll-up" href="#header">В начало</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
