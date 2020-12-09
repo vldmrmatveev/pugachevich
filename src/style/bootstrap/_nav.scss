@@ -122,3 +122,29 @@
     display: block;
   }
 }
+
+.nav-pills-tabs {
+	margin-bottom: 24px;
+	.nav-item:first-child {
+		.nav-link {
+			padding-left: 0;
+		}
+	}
+	.nav-item:last-child {
+		.nav-link {
+			padding-right: 0;
+		}
+	}
+	.nav-link {
+		border-radius: 0;
+		color: $light;
+		&:hover {
+			//color: $primary;
+			color: lighten($primary, 4%);
+		}
+		&.active {
+			color: $primary;
+			background-color: transparent;
+		}
+	}
+}

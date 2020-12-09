@@ -35,5 +35,6 @@ $('.crew-slider-text').slick({
 	asNavFor: '.crew-slider-main, .crew-slider-secondary',
 	swipe: false,
 	fade: true,
-  cssEase: 'linear'
+	cssEase: 'linear',
+	adaptiveHeight: true
 })
