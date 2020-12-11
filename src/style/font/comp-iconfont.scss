@@ -21,14 +21,22 @@
 }
 
 
-.icon-close:before {
+.icon-arrow-link-left:before {
 	content: "\E001";
 }
 
-.icon-facebook:before {
+.icon-arrow-link-right:before {
 	content: "\E002";
 }
 
-.icon-instagram:before {
+.icon-close:before {
 	content: "\E003";
+}
+
+.icon-facebook:before {
+	content: "\E004";
+}
+
+.icon-instagram:before {
+	content: "\E005";
 }

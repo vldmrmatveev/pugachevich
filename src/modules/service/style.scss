@@ -1,0 +1,19 @@
+.service-block {
+	margin-bottom: 112px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 64px;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&-btn {
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
+	}
+	&-title {
+		@include media-breakpoint-down(sm) {
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.icon-nav-block {
+	font-size: 10px;
+	transform: translateY(1px);
+}
+
+.portfolio-slider-min {
+	&-item {
+		margin: 0 4px;
+		width: 100px;
+		height: 100px;
+		&-img {
+			width: 100%;
+			max-width: 100px;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.portfolio-slider {
+	.slick-prev {
+		left: 15px;
+	}
+	.slick-next {
+		right: 15px;
+	}
+}

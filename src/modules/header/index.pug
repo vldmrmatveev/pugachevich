@@ -1,3 +1,26 @@
+- var email = "info@pugachevich.studio";
+- var phone = "+7 925 944 80 08";
+- var phonelink = "79259448008";
+mixin nav-block(name, secondname)
+	.row
+		.col-sm-6.mb-3
+			a(href="#").d-inline-flex.align-items-center.text-light
+				i.icon.icon-nav-block.icon-arrow-link-left.mr-2
+				span.d-inline.d-sm-none.font-weight-bold= name
+				span.d-none.d-sm-inline.font-weight-bold Назад 
+		.col-sm-6.d-none.d-sm-flex.justify-content-end.mb-3
+			a(href="#").d-inline-flex.align-items-center.text-light
+				span.font-weight-bold= secondname 
+				i.icon.icon-nav-block.icon-arrow-link-right.ml-2
+mixin share-block
+	.d-flex.align-items-center
+		p.font-weight-bold.mb-0.mr-3 Поделиться
+		.mr-3
+			a(href="#").d-flex
+				i.icon.icon-instagram.navbar__icon
+		.d-block
+			a(href="#").d-flex
+				i.icon.icon-facebook.navbar__icon
 .navbar-fixed-container#header
 nav.navbar.navbar-fixed.navbar-expand-lg.navbar-light.bg-white
 	a.navbar-brand(href='/')
@@ -9,18 +32,18 @@ nav.navbar.navbar-fixed.navbar-expand-lg.navbar-light.bg-white
 		span.navbar-toggler-icon-custom
 	.collapse.navbar-collapse#navbarCollapse
 		ul.navbar-nav.mr-auto.my-4.my-lg-0
-			li.nav-item.nav-item-drop.mb-2.mb-lg-0
+			li.nav-item.nav-item-drop.mb-2.mb-lg-0.pb-1
 				a(href="#").nav-link О студии
-			li.nav-item.nav-item-drop.mb-2.mb-lg-0
+			li.nav-item.nav-item-drop.mb-2.mb-lg-0.pb-1
 				a(href="#").nav-link Услуги
-			li.nav-item.nav-item-drop.mb-2.mb-lg-0
+			li.nav-item.nav-item-drop.mb-2.mb-lg-0.pb-1
 				a(href="#").nav-link Портфолио
-			li.nav-item.nav-item-drop.mb-2.mb-lg-0
+			li.nav-item.nav-item-drop.mb-2.mb-lg-0.pb-1
 				a(href="#").nav-link Блог
 			li.nav-item.nav-item-drop
 				a(href="#").nav-link Контакты
 		.d-flex.d-lg-none.align-items-center.mb-3
-			.mr-3
+			.mr-3.pr-2
 				a(href="#").d-flex
 					i.icon.icon-instagram.navbar__icon
 			.mr-3
@@ -42,8 +65,8 @@ nav.navbar.navbar-fixed.navbar-expand-lg.navbar-light.bg-white
 			.modal-header
 				button.close(type='button' data-dismiss='modal' aria-label='Close')
 					i.icon.icon-close
-			.modal-body.px-xl-5
-				.container.px-xl-4
+			.modal-body.px-xl-5.py-lg-5
+				.container.px-xl-4.py-xl-5
 					.row.justify-content-between
 						.col-lg-4
 							.h4.mb-4 Начнем проект?

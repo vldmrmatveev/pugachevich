@@ -1,0 +1,22 @@
+.page-container
+	.container
+		.row
+			.col-md-12.d-none.d-sm-block
+				nav(aria-label='breadcrumb').mb-5
+					ol.breadcrumb
+						li.breadcrumb-item
+							a(href='/') О студии
+						li.breadcrumb-item.active(aria-current='page') Контакты
+			.col-md-12.mb-3
+				.h4.mb-4 Контакты
+				p.mb-4 г. Москва, ул. Кузнецкий мост, 12/3, стр.1, офис 304
+				.mb-4
+					a(href="tel:" + phonelink).text-dark #{phone}
+				.mb-4
+					a(href="mailto:" + email).text-dark #{email}
+			.col-md-12
+				div(style='position:relative;overflow:hidden;')
+					a(href='https://yandex.ru/maps/org/pugachevich_studio/148173066625/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:0px;') Pugachevich Studio
+					a(href='https://yandex.ru/maps/213/moscow/category/architect_bureau/184107417/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:14px;') Архитектурное бюро в Москве
+					a(href='https://yandex.ru/maps/213/moscow/category/interior_design/184107539/?utm_medium=mapframe&utm_source=maps' style='color:#eee;font-size:12px;position:absolute;top:28px;') Дизайн интерьеров в Москве
+					iframe.contact-map(src='https://yandex.ru/map-widget/v1/-/CCUEJOwe~B' width='560' height='400' frameborder='1' allowfullscreen style='position:relative;')

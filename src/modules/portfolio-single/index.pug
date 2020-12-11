@@ -1,0 +1,66 @@
+.page-container
+	.container
+		.row
+			.col-md-12.d-none.d-sm-block
+				nav(aria-label='breadcrumb').mb-5
+					ol.breadcrumb
+						li.breadcrumb-item
+							a(href='/') О студии
+						li.breadcrumb-item
+							a(href='/') Портфолио
+						li.breadcrumb-item.active(aria-current='page') Два лица одного дома
+		+nav-block('Портфолио', 'Следующий проект')
+		.row
+			.col-md-12.px-0.d-block.d-sm-none#headingCollapseImages
+				img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+				img(src="picture/upload/portfolio-img.jpg", alt="").w-100.mb-2
+				img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+				#collapseImages.collapse(aria-labelledby="headingCollapseImages")
+					img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+					img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
+					img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+			.col-md-12.d-block.d-sm-none
+				.mt-3.mb-4.pb-2
+					button.collapsed-btn.btn.btn-outline-primary.w-100(data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages")
+						span.collapsed-btn-false Смотреть еще
+						span.collapsed-btn-true Скрыть
+			.col-md-12.mb-4.d-none.d-sm-block
+				.portfolio-slider
+					img(src="picture/backgrounds/main.jpg", alt="")
+					img(src="picture/backgrounds/main.jpg", alt="")
+					img(src="picture/backgrounds/main.jpg", alt="")
+			.col-Lg-3.col-sm-4.d-flex.d-sm-block.flex-column
+				.d-none.d-sm-block
+					.portfolio-slider-min.mb-4
+						.portfolio-slider-min-item
+							img(src="picture/backgrounds/main.jpg", alt="").portfolio-slider-min-item-img
+						.portfolio-slider-min-item
+							img(src="picture/backgrounds/main.jpg", alt="").portfolio-slider-min-item-img
+						.portfolio-slider-min-item
+							img(src="picture/backgrounds/main.jpg", alt="").portfolio-slider-min-item-img
+				.order-2.order-sm-1
+					p.mb-4
+						span.font-weight-bold.d-block.mb-1 Обьект
+						span загородный дом
+					p.mb-4
+						span.font-weight-bold.d-block.mb-1 Площадь
+						span 102 м
+							sup 2
+					p.mb-4
+						span.font-weight-bold.d-block.mb-1 Адрес
+						span МО, село Немчиновка
+					p.mb-4.pb-2
+						span.font-weight-bold.d-block.mb-1 Авторы
+						span.d-block.mb-1 Анастасия Пугачевич
+						span Андрей Сайко
+				.order-1.order-sm-2.mb-4.mb-sm-0
+					+share-block
+			.col-lg-9.col-sm-8.col-xl-8
+				.h4.mb-3.pb-lg-1 Два лица одного дома
+				p.mb-3 Немчиновка — стародачное место, в котором исторически сложился свой микроклимат загородной жизни. Здесь жили и трудились Казимир Малевич, Сергей Эйзенштейн, Фёдор Шехтель и другие известные личности из мира искусства. Застройка этого места характеризуется плотно соседствующими друг с другом и небольшими по площади участками.
+				p.mb-3 Мы построили здесь просторный дом в современном стиле для семьи из четырёх человек с детьми младшего школьного возраста. Одной из задач, кроме выполнения пожеланий заказчиков, было вписать новое строение в сложившийся традиционный ландшафт, обеспечить приватность и сохранить при этом колорит жизни за городом.
+				p.mb-3 Дом логически разделён на две части. Детская зона выполнена из белого кирпича, а чёрный объём посвящён пространству для взрослых. Обращённый к просёлочной дороге и к соседним участкам фасад интересен и разнообразен, несмотря на минимальное количество окон. Изменяющая направление кирпичная кладка позволяет практически глухому фасаду выглядеть не скучно, а значительный объём дома становится более интересным и гуманным.
+				p.mb-3 Со стороны участка дом преображается. Обширное витражное остекление стирает границу между домом и участком, как бы пуская природу внутрь дома. Активно используется свет. Фасад максимально открыт, а остекление повторяет контуры строения, и мы видим здесь как бы три дома — из чёрного и белого кирпича и из стекла. Большое значение в слиянии участка с домом приобретает дерево: оформленная им стена у входа продолжается в настиле на земле.
+				p.mb-3 Архитектурный стиль дома — это новое прочтение типологии дачных участков, баланс между традиционным загородным и современным стилем. Органичная для места и понятная жильцам архитектура в логичных, обусловленных контекстом фасадных решениях.
+				.d-block.d-sm-none.pt-4
+					button.btn.btn-outline-primary.w-100(data-toggle="modal" data-target="#formModal") Заказать услугу
