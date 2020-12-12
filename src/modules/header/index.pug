@@ -4,13 +4,13 @@
 mixin nav-block(name, secondname)
 	.row
 		.col-sm-6.mb-3
-			a(href="#").d-inline-flex.align-items-center.text-light
+			a(href="#").d-inline-flex.align-items-center.text-dark
 				i.icon.icon-nav-block.icon-arrow-link-left.mr-2
-				span.d-inline.d-sm-none.font-weight-bold= name
-				span.d-none.d-sm-inline.font-weight-bold Назад 
+				span.d-inline.d-sm-none= name
+				span.d-none.d-sm-inline Назад 
 		.col-sm-6.d-none.d-sm-flex.justify-content-end.mb-3
-			a(href="#").d-inline-flex.align-items-center.text-light
-				span.font-weight-bold= secondname 
+			a(href="#").d-inline-flex.align-items-center.text-dark
+				span= secondname 
 				i.icon.icon-nav-block.icon-arrow-link-right.ml-2
 mixin share-block
 	.d-flex.align-items-center

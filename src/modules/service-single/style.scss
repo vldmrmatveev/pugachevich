@@ -16,6 +16,11 @@
 			margin-bottom: 0;
 		}
 	}
+	&__card {
+		@include media-breakpoint-down(md) {
+			height: 400px;
+		}
+	}
 }
 .service-slider{
 	&-img {

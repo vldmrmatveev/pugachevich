@@ -1,3 +1,13 @@
+mixin carousel-item-service
+	.px-3
+		.main__card.service-single__card
+			.main__card-hide
+				.main__card-hide-block
+					.text-white.h4.mb-4 Два лица одного дома 
+					.text-white.h5.font-weight-normal.mb-4.pb-3 Площадь 
+						span.font-weight-bold 278 м
+							sup 2
+					a(href="#").btn.btn-outline-secondary Посмотреть проект
 mixin portfolio-card-service
 	.square-card(style="background-image:url('picture/upload/project-1.jpg')")
 		.square-card-body
@@ -19,9 +29,10 @@ mixin steps(num, name, ...params)
 						small
 							i.icon.icon-close
 				.modal-body.p-md-5
-					.h5.mb-3= num + ' этап. ' + name
-					each param in params
-						p.mb-3= param
+					.pb-4
+						.h5.mb-3= num + ' этап. ' + name
+						each param in params
+							p.mb-3= param
 .page-container.pb-0
 	.container.service-single-container
 		.row
@@ -67,8 +78,9 @@ mixin steps(num, name, ...params)
 						span.collapsed-btn-false Смотреть еще
 						span.collapsed-btn-true Скрыть
 	.d-none.d-sm-block
+
 		.service-slider
-			img(src="picture/backgrounds/main.jpg", alt="").service-slider-img
-			img(src="picture/backgrounds/main.jpg", alt="").service-slider-img
-			img(src="picture/backgrounds/main.jpg", alt="").service-slider-img
-			img(src="picture/backgrounds/main.jpg", alt="").service-slider-img
+			+carousel-item-service
+			+carousel-item-service
+			+carousel-item-service
+			+carousel-item-service
