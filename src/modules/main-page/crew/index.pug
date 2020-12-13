@@ -1,11 +1,11 @@
-mixin main-carousel-item
-	img(src="picture/upload/crew.jpg", alt="")
-mixin secondary-carousel-item
+mixin main-carousel-item(img)
+	img(src="picture/upload/"+img, alt="")
+mixin secondary-carousel-item(img)
 	.crew-slider-secondary-item
-		img(src="picture/upload/face.jpg", alt="").crew-slider-secondary-item-img
-mixin text-carousel-item
+		img(src="picture/upload/"+img, alt="").crew-slider-secondary-item-img
+mixin text-carousel-item(name)
 	.crew-slider-text-item
-		.h4.mb-3.pb-1 Анастасия Пугачевич
+		.h4.mb-3.pb-1= name
 		p.mb-3.pb-1
 			span.font-weight-bold Образование: 
 			span МАРХИ
@@ -24,43 +24,37 @@ mixin text-carousel-item
 				p.mb-3 У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.
 			.col-lg-4.col-sm-5
 				.crew-slider-main
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
-					+main-carousel-item
+					+main-carousel-item('anastasia.jpg')
+					+main-carousel-item('natalia.jpg')
+					+main-carousel-item('anastasia.jpg')
+					+main-carousel-item('natalia.jpg')
+					+main-carousel-item('anastasia.jpg')
+					+main-carousel-item('natalia.jpg')
+					+main-carousel-item('anastasia.jpg')
+					+main-carousel-item('natalia.jpg')
 				.d-none.d-sm-block
 					.crew-slider-secondary.mt-1
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
-						+secondary-carousel-item
+						+secondary-carousel-item('anastasia.jpg')
+						+secondary-carousel-item('natalia.jpg')
+						+secondary-carousel-item('anastasia.jpg')
+						+secondary-carousel-item('natalia.jpg')
+						+secondary-carousel-item('anastasia.jpg')
+						+secondary-carousel-item('natalia.jpg')
+						+secondary-carousel-item('anastasia.jpg')
+						+secondary-carousel-item('natalia.jpg')
 			.col-lg-6.col-sm-7
 				.pl-xl-4.ml-xl-3
 					h2.h4.mb-3.d-none.d-sm-block Команда
 					p.mb-5.d-none.d-sm-block У всех сотрудников архитектурного бюро — высшее профессиональное образование и значительный практический опыт в работе с различными видами пространств.
 					.crew-slider-text.mt-3.mt-sm-0
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
-						+text-carousel-item
+						+text-carousel-item('Анастасия Пугачевич')
+						+text-carousel-item('Наталья Ласковая')
+						+text-carousel-item('Анастасия Пугачевич')
+						+text-carousel-item('Наталья Ласковая')
+						+text-carousel-item('Анастасия Пугачевич')
+						+text-carousel-item('Наталья Ласковая')
+						+text-carousel-item('Анастасия Пугачевич')
+						+text-carousel-item('Наталья Ласковая')
 					.d-none.d-sm-flex.align-items-center
 						.crew-slider-arrow-left.mr-4
 						.crew-slider-arrow-right.ml-3

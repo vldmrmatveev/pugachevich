@@ -22,7 +22,8 @@ $('.crew-slider-secondary').slick({
   slidesToScroll: 1,
 	asNavFor: '.crew-slider-main, .crew-slider-text',
 	centerMode: true,
-	focusOnSelect: true
+	focusOnSelect: true,
+	variableWidth: true
 	//prevArrow: '.crew-slider-arrow-left',
 	//nextArrow: '.crew-slider-arrow-right'
 });
