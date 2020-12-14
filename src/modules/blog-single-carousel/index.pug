@@ -11,8 +11,24 @@
 						li.breadcrumb-item.active(aria-current='page') Реконструкция дома
 		+nav-block('Блог', 'Следующая статья')
 		.row
-			.col-md-12.mb-5.padding-xs
-				img(src="picture/upload/blog-article.jpg", alt="").w-100
+			.col-md-12.px-0.d-block.d-sm-none#headingCollapseImages
+				img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+				img(src="picture/upload/portfolio-img.jpg", alt="").w-100.mb-2
+				img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+				#collapseImages.collapse(aria-labelledby="headingCollapseImages")
+					img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
+					img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
+					img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+			.col-md-12.d-block.d-sm-none
+				.mt-3.mb-4.pb-2
+					button.collapsed-btn.btn.btn-outline-primary.w-100(data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages")
+						span.collapsed-btn-false Смотреть еще
+						span.collapsed-btn-true Скрыть
+			.col-md-12.mb-4.d-none.d-sm-block
+				.blog-slider
+					img(src="picture/backgrounds/main.jpg", alt="")
+					img(src="picture/backgrounds/main.jpg", alt="")
+					img(src="picture/backgrounds/main.jpg", alt="")
 			.col-xl-9.col-lg-10.pr-xl-5
 				.mb-4.pb-2
 					+share-block

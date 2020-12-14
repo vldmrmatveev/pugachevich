@@ -4,3 +4,4 @@
 //= ../modules/main-page/crew/script.js
 //= ../modules/portfolio-single/script.js
 //= ../modules/service-single/script.js
+//= ../modules/blog-single-carousel/script.js
