@@ -2,16 +2,15 @@
 - var phone = "+7 925 944 80 08";
 - var phonelink = "79259448008";
 mixin nav-block(name, secondname)
-	.row
-		.col-6.mb-3
+	.row.align-items-center
+		.col-sm-6.mb-3
 			a(href="#").d-inline-flex.align-items-center.text-dark
 				i.icon.icon-nav-block.icon-arrow-link-left.mr-2
-				span.d-none= name
-				span Назад 
-		.col-6.d-flex.justify-content-end.mb-3
+				span.d-inline.d-sm-none= name
+				span.d-none.d-sm-inline Назад 
+		.col-sm-6.d-none.d-sm-flex.justify-content-end.mb-3
 			a(href="#").d-inline-flex.align-items-center.text-dark
-				span.d-none.d-sm-inline= secondname 
-				span.d-inline.d-sm-none Вперед
+				span= secondname 
 				i.icon.icon-nav-block.icon-arrow-link-right.ml-2
 mixin share-block
 	.d-flex.align-items-center
