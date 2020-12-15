@@ -1,10 +1,14 @@
 .main {
 	&__card {
-		background-image: url('../picture/backgrounds/main.jpg');
-		background-size: cover;
-		background-position: center;
-		height: 602px;
+		// background-image: url('../picture/backgrounds/main.jpg');
+		// background-size: cover;
+		// background-position: center;
+		// height: 602px;
+		position: relative;
 		&-hide {
+			position: absolute;
+			left: 0;
+			top: 0;
 			opacity: 0;
 			transition: 0.2s ease all;
 			background-color: rgba(0,0,0,0.7);
