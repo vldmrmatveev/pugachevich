@@ -5,6 +5,15 @@
 		// background-position: center;
 		// height: 602px;
 		position: relative;
+		&-big {
+			max-width: 1440px;
+			margin-left: 10px;
+			margin-right: 10px;
+			@include media-breakpoint-down(lg) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
 		&-hide {
 			position: absolute;
 			left: 0;
@@ -22,6 +31,17 @@
 			.main__card-hide {
 				opacity: 1;
 			}	
+		}
+		&-mob {
+			&-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				min-height: 320px;
+			}
+			&-hide {
+				opacity: 1;
+			}
 		}
 	}
 }

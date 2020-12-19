@@ -21,10 +21,21 @@ mixin share-block
 		.d-block
 			a(href="#").d-flex
 				i.icon.icon-facebook.navbar__icon
+mixin link-item(img)
+	.main__card.main__card-mob.mb-2
+		img(src="picture/upload/"+img, alt="").main__card-mob-img
+		.main__card-hide.main__card-mob-hide
+			.main__card-hide-block
+				.text-white.h4.mb-4 Два лица одного дома 
+				.text-white.h5.font-weight-normal.mb-4.pb-3 Площадь 
+					span.font-weight-bold 278 м
+						sup 2
+				a(href="#").btn.btn-outline-secondary Посмотреть проект
 .navbar-fixed-container#header
 nav.navbar.navbar-fixed.navbar-expand-lg.navbar-light.bg-white
 	a.navbar-brand(href='/')
-		img(src="picture/upload/logo.svg", alt="")
+		img(src="picture/upload/logo.svg", alt="").d-none.d-sm-inline
+		img(src="picture/upload/logo-mob.svg", alt="").d-inline.d-sm-none
 	button.navbar-toggler.d-block.d-lg-none(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
 		span.navbar-toggler-icon-custom
 		span.navbar-toggler-icon-custom

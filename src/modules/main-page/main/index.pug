@@ -1,5 +1,5 @@
 mixin carousel-item
-	.main__card
+	.main__card.main__card-big
 		img(src="picture/backgrounds/main.jpg", alt="").w-100
 		.main__card-hide
 			.main__card-hide-block
@@ -19,13 +19,13 @@ mixin carousel-item
 			+carousel-item
 			+carousel-item
 	.d-block.d-sm-none#headingCollapseImages
-		img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
-		img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
-		img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+		+link-item('main-mob-1.jpg')
+		+link-item('main-mob-2.jpg')
+		+link-item('main-mob-3.jpg')
 		#collapseImages.collapse(aria-labelledby="headingCollapseImages")
-			img(src="picture/upload/main-mob-1.jpg", alt="").w-100.mb-2
-			img(src="picture/upload/main-mob-2.jpg", alt="").w-100.mb-2
-			img(src="picture/upload/main-mob-3.jpg", alt="").w-100.mb-2
+			+link-item('main-mob-1.jpg')
+			+link-item('main-mob-2.jpg')
+			+link-item('main-mob-3.jpg')
 
 		.container
 			.row
