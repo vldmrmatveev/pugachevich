@@ -320,6 +320,9 @@
 			@include media-breakpoint-down(md) {
 				padding-left: 0;
 			}
+			@include media-breakpoint-down(xs) {
+				font-size: 13px;
+			}
 
       @include hover-focus() {
         color: $navbar-light-hover-color;
