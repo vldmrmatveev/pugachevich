@@ -1,4 +1,4 @@
-window.onload = function() {
+// window.onload = function() {
 	$('.main-slider').slick({
 		dots: true,
 		arrows: true,
@@ -17,7 +17,7 @@ window.onload = function() {
 			}
 		]
 	});
-}
+// }
 
 $('.collapsed-btn').click(function(){
 	if ($(this).attr('aria-expanded') == 'true') {
