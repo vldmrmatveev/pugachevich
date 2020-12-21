@@ -1,14 +1,3 @@
-mixin carousel-item-service
-	.px-3
-		.main__card.service-single__card
-			img(src="picture/backgrounds/main.jpg", alt="").w-100
-			.main__card-hide
-				.main__card-hide-block
-					.text-white.h4.mb-4 Два лица одного дома 
-					.text-white.h5.font-weight-normal.mb-4.pb-3 Площадь 
-						span.font-weight-bold 278 м
-							sup 2
-					a(href="#").btn.btn-outline-secondary Посмотреть проект
 mixin portfolio-card-service
 	.square-card(style="background-image:url('picture/upload/project-1.jpg')")
 		.square-card-body
@@ -64,24 +53,27 @@ mixin steps(num, name, ...params)
 						+steps('5', 'Разработка мебели и индивидуальных изделий', 'В каждом проекте нашей студии много столярных изделий и отдельных предметов интерьера, разработанных специально для конкретного проекта элитного дизайна интерьера. Такой подход позволяет учесть все пожелания заказчика по функциональному наполнению пространства мебелью, дает максимум свободы в выборе отделок и не ограничивает размерный ряд — что часто бывает с готовой продукцией.', 'Мы обсуждаем конфигурацию и наполнение всех позиций для проработки. Проект дополняется подробными чертежами мебели, по которым можно будет точно рассчитать смету на изготовление индивидуальных изделий, даже когда речь идет об иностранных фабриках.')
 						+steps('6', 'Визуализация', 'После проработки архитектурных, инженерных и технических аспектов, выполняется 3D-визуализация всех основных помещений проекта. Мы можем представить себе конечный результат и, при необходимости, внести последние изменения. Световое решение, зонирование, сочетаемость оттенков и текстур — все это можно проверить, а при желании — исправить. 3D-формат сразу демонстрирует все преимущества и особенности интерьерных решений и позволяет заказать элитный дизайн интерьера с гарантированным результатом.')
 						+steps('7', 'Рабочий проект', 'На этом этапе к выпуску готовится полный альбом рабочих чертежей, по которому строительная бригада может составить максимально точную смету работ. Рабочий проект интерьера включает в себя, в том числе, подробные технические планы полов, потолков, освещения, розеток и выключателей, развертки стен, спецификации отделочных материалов и оборудования для эксклюзивного дизайна интерьера.')
-			.col-md-12.d-block.d-sm-none#headingCollapseImages
-				.mb-4
-					+portfolio-card-service
-				.mb-4
-					+portfolio-card-service
-				#collapseImages.collapse(aria-labelledby="headingCollapseImages")
-					.mb-4
-						+portfolio-card-service
-					.mb-4
-						+portfolio-card-service
-			.col-md-12.d-block.d-sm-none
-					button.collapsed-btn.btn.btn-outline-primary.w-100(data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages")
-						span.collapsed-btn-false Смотреть еще
-						span.collapsed-btn-true Скрыть
-	.d-none.d-sm-block
-
-		.service-slider
-			+carousel-item-service
-			+carousel-item-service
-			+carousel-item-service
-			+carousel-item-service
+	.overflow-hidden
+		.d-none.d-sm-block
+			.main-slider
+				+carousel-item
+				+carousel-item
+				+carousel-item
+				+carousel-item
+				+carousel-item
+				+carousel-item
+				+carousel-item
+		.d-block.d-sm-none#headingCollapseImages
+			+link-item('main-mob-1.jpg')
+			+link-item('main-mob-2.jpg')
+			+link-item('main-mob-3.jpg')
+			#collapseImages.collapse(aria-labelledby="headingCollapseImages")
+				+link-item('main-mob-1.jpg')
+				+link-item('main-mob-2.jpg')
+				+link-item('main-mob-3.jpg')
+			.container
+				.row
+					.col-md-12.mt-3
+						button.collapsed-btn.btn.btn-outline-primary.w-100(data-toggle="collapse" data-target="#collapseImages" aria-expanded="false" aria-controls="collapseImages")
+							span.collapsed-btn-false Смотреть еще
+							span.collapsed-btn-true Скрыть
