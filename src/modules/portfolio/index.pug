@@ -1,5 +1,10 @@
 mixin portfolio-card(img)
-	.square-card(style="background-image:url('picture/upload/" + img + "')")
+	.square-card.d-none.d-sm-block(style="background-image:url('picture/upload/" + img + "')")
+		.square-card-body
+			.h5.text-white.text-center.mb-4.square-card-title Два лица одного дома
+			a(href="#").btn.btn-outline-secondary.square-card-btn Смотреть подробнее
+mixin portfolio-card-mobile(img)
+	.square-card.d-sm-none(style="background-image:url('picture/upload/" + img + "')")
 		.square-card-body
 			.h5.text-white.text-center.mb-4.square-card-title Два лица одного дома
 			a(href="#").btn.btn-outline-secondary.square-card-btn Смотреть подробнее
@@ -29,95 +34,137 @@ mixin portfolio-card(img)
 						.row
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-1.jpg')
+								+portfolio-card-mobile('project-1.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-md-12.d-flex.justify-content-center
 								button.btn.btn-outline-primary.btn-full-width-sm Смотреть еще
 					.tab-pane.fade.show.active#architecture(role="tabpanel" aria-labelledby="architecture-tab")
 						.row
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-1.jpg')
+								+portfolio-card-mobile('project-1.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-md-12.d-flex.justify-content-center
 								button.btn.btn-outline-primary.btn-full-width-sm Смотреть еще
 					.tab-pane.fade#interior(role="tabpanel" aria-labelledby="interior-tab")
 						.row
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-1.jpg')
+								+portfolio-card-mobile('project-1.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 					.tab-pane.fade#contest(role="tabpanel" aria-labelledby="contest-tab")
 						.row
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-1.jpg')
+								+portfolio-card-mobile('project-1.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-2.jpg')
+								+portfolio-card-mobile('project-2.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-3.jpg')
+								+portfolio-card-mobile('project-3.jpg')
 							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
 								+portfolio-card('project-4.jpg')
+								+portfolio-card-mobile('project-4.jpg')

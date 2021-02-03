@@ -13,10 +13,16 @@
 }
 
 .square-card {
-	height: 330px;
+	height: 350px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	@include media-breakpoint-down(lg) {
+		height: 290px;
+	}
+	@include media-breakpoint-down(md) {
+		height: 330px;
+	}
 	&-title {
 		&-show {
 			margin-left: auto;
