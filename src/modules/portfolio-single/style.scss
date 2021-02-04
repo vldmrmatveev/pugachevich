@@ -22,9 +22,9 @@
 		object-fit: contain;
 		object-position: center;
 		// max-height: 840px;
-		height: 650px;
+		height: 700px;
 		@include media-breakpoint-down(md) {
-			height: 400px;
+			height: 350px;
 		}
 	}
 	.slick-prev {
