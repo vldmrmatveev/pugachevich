@@ -21,18 +21,12 @@
 	&__img {
 		object-fit: contain;
 		object-position: center;
-		max-height: 840px;
-		// height: 500px;
+		// max-height: 840px;
+		height: 650px;
+		@include media-breakpoint-down(md) {
+			height: 400px;
+		}
 	}
-	.slick-prev {
-		left: 15px;
-	}
-	.slick-next {
-		right: 15px;
-	}
-}
-
-.portfolio-slider-new {
 	.slick-prev {
 		left: 15px;
 	}
