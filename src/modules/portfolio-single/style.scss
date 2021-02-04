@@ -18,6 +18,11 @@
 }
 
 .portfolio-slider {
+	&__img {
+		object-fit: contain;
+		object-position: center;
+		height: 500px;
+	}
 	.slick-prev {
 		left: 15px;
 	}
