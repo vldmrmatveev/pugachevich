@@ -113,3 +113,13 @@
 	height: 100%;
 	width: 100%;
 }
+
+.flowplayer-embed-container-block {
+	height: 100% !important;
+	@include media-breakpoint-down(sm) {
+		height: 650px !important;
+	}
+	@include media-breakpoint-down(xs) {
+		height: 510px !important;
+	}
+}
