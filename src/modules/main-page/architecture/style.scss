@@ -12,6 +12,25 @@
 			z-index: 1;
 			transition: 0.2s ease all;
 		}
+		&-container {
+			height: 100%;
+			width: 332px;
+			@include media-breakpoint-down(lg) {
+				width: 297px;
+			}
+			@include media-breakpoint-down(md) {
+				height: calc(100% - 25px);
+				width: 100%;
+			}
+			@include media-breakpoint-down(sm) {
+				width: 366px;
+				height: 100%;
+			}
+			@include media-breakpoint-down(xs) {
+				width: 287px;
+				height: 510px;
+			}
+		}
 		&-btn {
 			position: absolute;
 			left: 0;
