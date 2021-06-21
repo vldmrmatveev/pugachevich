@@ -1,0 +1,115 @@
+mixin blog-card(text)
+	.pb-md-3
+		a(href="#").d-block
+			img(src="picture/upload/blog-new.jpg", alt="").w-100.mb-4
+		p.mb-2 01.01.21
+		.mb-4
+			a(href="#").h5.text-dark= text
+.page-container
+	.container
+		.row
+			.col-md-12.d-none.d-sm-block
+				nav(aria-label='breadcrumb').mb-5
+					ol.breadcrumb
+						li.breadcrumb-item
+							a(href='/') О студии
+						li.breadcrumb-item.active(aria-current='page') Блог
+			.col-md-12
+				.swipe-container
+					.swipe-container-block
+						ul.nav.nav-pills.nav-pills-tabs(role="tablist")
+							li.nav-item
+								a(data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="false").nav-link#all-tab Все
+							li.nav-item
+								a(data-toggle="tab" href="#architecture" role="tab" aria-controls="architecture" aria-selected="true").nav-link.active#architecture-tab Архитектура
+							li.nav-item
+								a(data-toggle="tab" href="#interior" role="tab" aria-controls="interior" aria-selected="false").nav-link#interior-tab Интерьер
+							li.nav-item
+								a(data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false").nav-link#history-tab История
+							li.nav-item
+								a(data-toggle="tab" href="#reconstruction" role="tab" aria-controls="reconstruction" aria-selected="false").nav-link#reconstruction-tab Реконструкция
+				.tab-content
+					.tab-pane.fade#all(role="tabpanel" aria-labelledby="all-tab")
+						.row
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-md-12.d-flex.justify-content-center
+								button.btn.btn-outline-primary.btn-full-width-sm Смотреть еще
+					.tab-pane.fade.show.active#architecture(role="tabpanel" aria-labelledby="architecture-tab")
+						.row
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+							.col-lg-4.col-sm-6.mb-6.d-none.d-sm-block
+								+blog-card('6 ошибок при реконструкции дома')
+							.col-md-12.d-flex.justify-content-center
+								button.btn.btn-outline-primary.btn-full-width-sm Смотреть еще
+					.tab-pane.fade#interior(role="tabpanel" aria-labelledby="interior-tab")
+						.row
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Моральное устаревание частного дома и нехватка места')
+					.tab-pane.fade#history(role="tabpanel" aria-labelledby="history-tab")
+						.row
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+					.tab-pane.fade#reconstruction(role="tabpanel" aria-labelledby="reconstruction-tab")
+						.row
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
+							.col-lg-4.col-sm-6.mb-6
+								+blog-card('Кейс по реконструкции дома')
